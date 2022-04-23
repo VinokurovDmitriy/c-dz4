@@ -3,24 +3,13 @@ int[] array3 = new int[3];
 int[] arrayRandom = new int[8];
 int[] arrayRandom2 = new int[4];
 
-int getRandom()  //возвращает случайное число от 1 до 9
-
-{
-    return new Random().Next(1, 10);
-}
-
-int getReadConsole()  //возвращает число введенное с клавиатуры
-{
-    return Convert.ToInt32(Console.ReadLine());
-}
-
 void fillArray(int[] array, bool random) //заполняет массив значениями
 {
     for (int i = 0; i < array.Length; i++)
     {
         int current;
-        if (random) current = getRandom();
-        else current = getReadConsole();
+        if (random) current =  new Random().Next(1, 10);
+        else current = Convert.ToInt32(Console.ReadLine());;
         array[i] = current;
     }
 }
