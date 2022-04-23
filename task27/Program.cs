@@ -3,10 +3,6 @@
 //82 -> 10
 //9012 ->12
 
-int num1 = 452;
-int num2 = 82;
-int num3 = 9012;
-
 void printNumSum(int num){
     int result = 0;
     Console.Write($"{num} -> ");
@@ -17,6 +13,7 @@ void printNumSum(int num){
     Console.WriteLine(result);
 }
 
-printNumSum(num1);
-printNumSum(num2);
-printNumSum(num3);
+printNumSum(452);
+printNumSum(82);
+printNumSum(9012);
+
