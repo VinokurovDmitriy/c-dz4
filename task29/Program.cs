@@ -7,12 +7,11 @@ void fillArray(int[] array, bool random) //заполняет массив зн�
 {
     for (int i = 0; i < array.Length; i++)
     {
-        int current;
-        if (random) current =  new Random().Next(1, 10);
-        else current = Convert.ToInt32(Console.ReadLine());;
-        array[i] = current;
+        if (random) array[i] = new Random().Next(1, 10);
+        else array[i] = Convert.ToInt32(Console.ReadLine());;
     }
 }
+
 void printArray(int[] array) //печатает массив
 {
     for (int i = 0; i < array.Length; i++)
@@ -21,6 +20,7 @@ void printArray(int[] array) //печатает массив
     }
     Console.WriteLine();
 }
+
 //Заполнение массивов с клавиатуры и печать массива
 Console.WriteLine("Введите последовательно цифры 1, 2, 5, 7, 19");
 fillArray(array5, false);
